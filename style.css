@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+#avatar, .teacher-avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.hero {
+    background-color: #7550FE;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+.description {
+    color: grey;;
+    font-size: .8em;
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
