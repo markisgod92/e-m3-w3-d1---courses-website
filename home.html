@@ -79,10 +79,46 @@
             </div>
             <div class="d-flex align-items-center gap-3">
                 <i class="bi bi-bell"></i>
-                <!-- <button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#user-modal"> -->
-                    <img id="avatar" src="assets/avatar-1.jpg" alt="avatar" data-bs-toggle="modal" data-bs-target="#user-modal">
-                  <!-- </button> -->
-                
+                <div class="dropdown">
+                    <img class="avatar" src="assets/avatar-1.jpg" alt="avatar"  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul class="dropdown-menu dropdown-menu-end p-3">
+                      <li>
+                        <div class="d-flex justify-content-start align-items-center gap-3">
+                            <img class="avatar" src="assets/avatar-1.jpg" alt="avatar">
+                            <div>
+                                <p class="m-0">Annete Black</p>
+                                <p class="m-0 text-secondary">annette@geeksui.com</p>
+                            </div>
+                        </div>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex justify-content-start align-items-center gap-2 py-2">
+                            <i class="bi bi-person"></i>
+                            <p class="m-0">Profile</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex justify-content-start align-items-center gap-2 py-2">
+                            <i class="bi bi-star"></i>
+                            <p class="m-0">Subscription</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex justify-content-start align-items-center gap-2 py-2">
+                            <i class="bi bi-gear"></i>
+                            <p class="m-0">Settings</p>
+                        </a> 
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex justify-content-start align-items-center gap-2 py-2">
+                            <i class="bi bi-toggle-off"></i>
+                            <p class="m-0">Sign out</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -91,40 +127,6 @@
             </div>
         </div>
     </nav>
-
-    <div class="modal" id="user-modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header d-flex justify-content-start align-items-center gap-3">
-                    <img id="avatar" src="assets/avatar-1.jpg" alt="avatar">
-                    <div>
-                        <p class="m-0">Annete Black</p>
-                        <p class="m-0 text-secondary">annette@geeksui.com</p>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-unstyled">
-                        <li class="d-flex justify-content-start align-items-center gap-2">
-                            <i class="bi bi-person"></i>
-                            <p class="m-0">Profile</p>
-                        </li>
-                        <li class="d-flex justify-content-start align-items-center gap-2">
-                            <i class="bi bi-star"></i>
-                            <p class="m-0">Subscription</p>
-                        </li>
-                        <li class="d-flex justify-content-start align-items-center gap-2">
-                            <i class="bi bi-gear"></i>
-                            <p class="m-0">Settings</p> 
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer justify-content-start">
-                    <i class="bi bi-toggle-off"></i>
-                    <p>Sign out</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <header>
         <div class="hero">
@@ -151,8 +153,10 @@
             <div class="row">
                 <div class="col-12 col-md-4">
                     <div class="d-flex justify-content-start justify-content-md-center align-items-center gap-2 p-3">
-                        <div class="bg-warning-subtle p-3 icon">
-                            <i class="bi bi-camera-video"></i>
+                        <div>
+                            <div class="bg-warning-subtle p-3 icon d-flex justify-content-center align-items-center">
+                                <i class="bi bi-camera-video"></i>
+                            </div>
                         </div>
                         <div>
                             <p class="p-1 m-0 fw-bold">30,000 online courses</p>
@@ -162,8 +166,10 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="d-flex justify-content-start justify-content-md-center align-items-center gap-2 p-3">
-                        <div class="bg-warning-subtle p-3 icon">
-                            <i class="bi bi-people"></i>
+                        <div>
+                            <div class="bg-warning-subtle p-3 icon d-flex justify-content-center align-items-center">
+                                <i class="bi bi-people"></i>
+                            </div>
                         </div>
                         <div>
                             <p class="p-1 m-0 fw-bold">Expert instruction</p>
@@ -173,8 +179,10 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="d-flex justify-content-start justify-content-md-center align-items-center gap-2 p-3">
-                        <div class="bg-warning-subtle p-3 icon">
-                            <i class="bi bi-clock"></i>
+                        <div>
+                            <div class="bg-warning-subtle p-3 icon d-flex justify-content-center align-items-center">
+                                <i class="bi bi-clock"></i>
+                            </div>
                         </div>
                         <div>
                             <p class="p-1 m-0 fw-bold">Lifetime Access</p>
@@ -204,6 +212,14 @@
                 </div>
                 <div class="row g-3" id="popular"></div>
             </section>
+            <section>
+                <div class="row">
+                    <div class="col-12 mt-4">
+                        <h4 class="mt-5 mb-3">Trending</h4>
+                    </div>
+                </div>
+                <div class="row g-3 pb-5" id="trending"></div>
+            </section>
         </div>
     </main>
 
@@ -216,16 +232,16 @@
                 <div class="col-12 col-md-6 text-end">
                     <ul class="list-unstyled d-flex justify-content-center justify-content-md-end align-items-center gap-4">
                         <li>
-                            Privacy
+                            <a href="#" class="text-decoration-none text-secondary">Privacy</a>
                         </li>
                         <li>
-                            Terms
+                            <a href="#" class="text-decoration-none text-secondary">Terms</a>
                         </li>
                         <li>
-                            Feedback
+                            <a href="#" class="text-decoration-none text-secondary">Feedback</a>
                         </li>
                         <li>
-                            Support
+                            <a href="#" class="text-decoration-none text-secondary">Support</a>
                         </li>
                     </ul>
                 </div>
