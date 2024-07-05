@@ -205,11 +205,11 @@ const createCardBody = (card, container) => {
 
 const createCardData = (card, container) => {
     const cardDuration = document.createElement("div");
-    cardDuration.setAttribute("class", "d-flex justify-content-start align-items-center gap-1");
+    cardDuration.setAttribute("class", "description d-flex justify-content-start align-items-center gap-1");
     cardDuration.innerHTML = `<i class="bi bi-clock"></i><p class="m-0">${card.duration}</p>`;
 
     const cardDifficulty = document.createElement("div");
-    cardDifficulty.setAttribute("class", "d-flex justify-content-start align-items-center gap-1");
+    cardDifficulty.setAttribute("class", "description d-flex justify-content-start align-items-center gap-1");
     cardDifficulty.innerHTML = `<i class="bi bi-bar-chart"></i><p class="m-0">${card.level}</p>`;
 
     container.append(cardDuration, cardDifficulty);
