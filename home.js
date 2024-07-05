@@ -285,3 +285,37 @@ cards.mostPopular.forEach(card => {
 cards.trending.forEach(card => {
     createCard(card, trendingContainer);
 })
+
+
+
+//GSAP
+
+gsap.to("#happy-guy", {
+    y: 0,
+    duration: 2,
+    delay: .9,
+    ease: "bounce"
+}) 
+
+gsap.to("#first-icon", {
+    x: 0,
+    opacity: 1,
+    duration: .3,
+    delay: .6,
+    ease: "none"
+})
+
+gsap.to("#second-icon", {
+    x: 0,
+    opacity: 1,
+    duration: .3,
+    delay: .3,
+    ease: "none"
+})
+
+gsap.to("#third-icon", {
+    x: 0,
+    opacity: 1,
+    duration: .3,
+    ease: "none"
+})

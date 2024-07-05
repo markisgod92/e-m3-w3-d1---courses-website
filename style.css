@@ -50,8 +50,39 @@
     transition: all .3s ease-in-out;
 }
 
+.card-container:hover .card {
+    opacity: .7;
+}
+
+.card-container:hover .card:hover {
+    opacity: 1;
+}
+
 .card:hover {
     z-index: 1;
     scale: 1.05;
     box-shadow: 0 0 50px;
+}
+
+#first-icon {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#second-icon {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#third-icon {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#happy-guy-container {
+    overflow: hidden;
+}
+
+#happy-guy {
+    transform: translateY(400px)
 }
